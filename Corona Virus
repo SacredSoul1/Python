@@ -1,0 +1,11 @@
+import turtle
+turtle.Screen().bgcolor('black')
+virus = turtle.Turtle()
+virus.speed(10)
+virus.color('cyan')
+b = 200
+while b > 0:
+    virus.left(b)
+    virus.forward(b * 2)
+    b = b-1
+turtle.done()
