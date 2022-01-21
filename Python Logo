@@ -1,0 +1,67 @@
+import turtle
+turtle.Screen().bgcolor('black')
+pyt,hon = turtle.Turtle(),turtle.Turtle()
+pyt.color('#FFD43B');hon.color('#306998')
+#Drawing starts
+pyt.right(90);hon.left(90);pyt.penup();hon.penup()
+for i in range(19):
+    pyt.forward(10);hon.forward(10)
+pyt.begin_fill();hon.begin_fill();pyt.pendown();hon.pendown()
+pyt.forward(30);hon.forward(30);pyt.left(90);hon.left(90)
+for i in range(21):
+    pyt.forward(10);hon.forward(10)
+pyt.right(90);hon.right(90)
+for i in range(10):
+    pyt.forward(10);hon.forward(10)
+for i in range(4):
+    pyt.circle(-57,15);hon.circle(-57,15)
+for i in range(4):
+    pyt.circle(-235,5);hon.circle(-235,5)
+for i in range(5):
+    pyt.circle(-650,4);hon.circle(-650,4)
+for i in range(4):
+    pyt.circle(-125,6);hon.circle(-125,6)
+for i in range(6):
+    pyt.circle(-100,9);hon.circle(-100,9)
+pyt.setheading(90);hon.setheading(270)
+for i in range(19):
+    pyt.forward(10);hon.forward(8)
+for i in range(89):
+    pyt.forward(2);hon.forward(2);pyt.right(1);hon.right(1)
+pyt.setheading(0);hon.setheading(180)
+for i in range(22):
+    pyt.forward(10);hon.forward(10)
+for i in range(91):
+    pyt.forward(2);hon.forward(2);pyt.left(1);hon.left(1)
+pyt.setheading(90);hon.setheading(270)
+for i in range(9):
+    pyt.forward(6.7);hon.forward(12)
+pyt.right(90);hon.right(90)
+for i in range(10):
+    pyt.forward(10);hon.forward(10)
+for i in range(4):
+    pyt.circle(-57,15);hon.circle(-57,15)
+for i in range(4):
+    pyt.circle(-235,5);hon.circle(-235,5)
+for i in range(4):
+    pyt.circle(-650,3.75);hon.circle(-650,4)
+for i in range(3):
+    pyt.circle(-125,6);hon.circle(-125,6)
+for i in range(6):
+    pyt.circle(-100,10);hon.circle(-100,10)
+pyt.setheading(180);hon.setheading(0)
+for i in range(31):
+    pyt.forward(10);hon.forward(10)
+pyt.forward(20);hon.forward(18)
+# Drawing ends
+pyt.end_fill();hon.end_fill()
+# Drawing Dark Circles
+bla,ck = turtle.Turtle(),turtle.Turtle()
+bla.penup();ck.penup();bla.right(90);ck.left(90)
+for i in range(31):
+    bla.forward(10);ck.forward(10)
+bla.left(90);ck.left(90)
+for i in range(12):
+    bla.forward(10);ck.forward(10)
+bla.dot(70,'black');ck.dot(70,'black')
+pyt.hideturtle();hon.hideturtle();turtle.done()
